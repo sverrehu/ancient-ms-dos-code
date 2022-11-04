@@ -1,0 +1,30 @@
+File name: DOSED520.ZIP
+One line description: Cmd line editor with filename completion
+
+Replaces: cmdutil/dosed517.zip
+
+Author or company: Sverre H. Huseby
+Email address:     sverrehu@ifi.uio.no
+Surface address:   Hoffsvn. 50 leil 105
+                   N-0377 Oslo
+                   Norway
+
+Special requirements: None
+Shareware payment required: Nope
+Demo/Nagware: No, full version.
+Self-documenting: Hope so...
+External documentation included: Yep!
+Source included: No
+Size: zip: 16kb, unzip: 30kb
+
+10 lines description:
+Resident program (about 3400 bytes) that gives extended operations
+on the DOS commandline. The three new functions are:
+  * Editing
+  * History, recall previous commands
+  * Filename completion (with displaying of matching files)
+New in v5.20
+  * Fixed a couple of minor `bugs',
+  * A second Tab-press will show matching files.
+  * .BAK-files are skipped during completion, unless turned off
+    using new option -s-.

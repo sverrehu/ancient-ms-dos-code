@@ -1,0 +1,10 @@
+v0.0 beta 1, 4/1-1991
+
+v1.0, 10/1-1991
+
+v1.01, 12/1-1991
+  * Rettet feil: Prosessloopen ville ikke stoppe hvis man kolliderte mens
+    bonusen ble oppdatert etter at slankepillen ble spist. Dette skyldtes
+    at clearmessage ikke hadde blitt utf›rt.
+
+

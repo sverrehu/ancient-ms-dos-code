@@ -1,0 +1,96 @@
+
+
+  +-----------------------------------+
+  |                                   |
+  |  TING SOM Mè GJùRES FùR ED UTGIS  |
+  |                                   |
+  +-----------------------------------+
+
+
+
+TESTFUNKSJONER
+  Alle 3 testfunksjoner mÜ slÜs av.
+
+
+
+
+
+
+  +--------------------------------------------------------+
+  |                                                        |
+  |  TING SOM KAN GJùRES SENERE (I PRIORITERT REKKEFùLGE)  |
+  |                                                        |
+  +--------------------------------------------------------+
+
+
+
+SùKING I TEKSTEN
+  MÜ utvide sõk og sõk/erstatt slik at flere opsjoner blir mulig.
+
+
+BLOKKMARKERING MED MUS
+  Trykk venstre mustast for Ü sette blokkstart, og marker
+  blokkslutt nÜr tasten slippes. (Evt bruk hõyre tast for
+  blokkslutt.)
+
+
+MULIGHET FOR 43/50 LINJER
+  Mulighet for Ü sette opp at ED skal bruke 43/50 linjer i oppsett-
+  programmet. Hvis skjermen er i 43/50, skal ikke modechange foretas.
+
+
+MARKER ENKELT ORD SOM BLOKK
+  SÜ lenge nÜvërende tegn er blankt: Flytt til venstre.
+  SÜ lenge nÜvërende er ikkeblank: Flytt til hõyre.
+  Sett blokkslutt etter siste ikkeblanke tegn.
+  SÜ lenge ikke blank: flytt til venstre. Sett blokkstart pÜ siste
+  ikkeblanke, og plasser markõren her.
+
+
+COMPILERINTERFACE-MULIGHETER
+  * Parameter pÜ kommandolinjen for Ü hoppe til en linje, slik at
+    det kan skrives interfacer til diverse kompilatorer.
+    feks: ED <filename> /L10 /C15
+    Leser inn angitt fil og hopper til linje 10, kolonne 15.
+    Dette muliggjõr hopp til sted med feil.
+  * Mulighet for Ü angi en melding som skal vises nÜr programmet
+    har startet (etter at filen er lest inn og markõren er plassert!)
+    feks: ED <filename> /M"error: missing ..."
+  * Mulighet for Ü angi at ED skal kunne avsluttes med andre (faste)
+    taster enn Alt-X, feks F8, F9, Alt-F9 osv, og returnere
+    exitcode etter hvilken tast som avsluttet programmet.
+    Gir mulighet for Ü la en tast bety "kompiler", "finn neste
+    feil" osv.
+    feks: ED /K
+    hvor K betyr Key. Angir at ED skal kunne avbrytes av andre taster.
+
+
+SE MESSAGE.ASM
+  Enkelte linjer kan vëre kommentert ut i hjelpeteksten. Disse kan
+  lages ettersom jeg fÜr lyst!
+
+
+TAB
+  Tab har jeg glemt. Denne mÜ vëre med under visning av linje, og den
+  mÜ behandles spesielt nÜr den er med i den delen av linjen som
+  skippes fõr fõrste kolonne.
+
+
+KUTT UT STRIPPING
+  Mulighet for Ü angi parameter som angir at linjer ikke skal strippes.
+
+
+PICKLISTEN
+  Mulighet for Ü fjerne en fil fra listen ved Ü trykke Del.
+  Gjelder ikke nÜvërende fil.
+
+
+"LINE TOO LONG"
+  Bõr ikke vise denne meldingen for hver linje som er for lang under
+  innlesning fra fil, men heller oppdatere en teller, og vise en melding
+  til slutt hvor antall forkortede linjer vises (hvis > 0).
+
+
+MUSSTYRING
+  Bõr utvides, slik at det er mulig Ü trykke pÜ linjen nederst pÜ skjermen
+  for Ü aktivisere tastene som er angitt der.

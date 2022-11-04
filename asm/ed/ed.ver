@@ -1,0 +1,162 @@
+v2.4, 11/8-1992
+    * Lagt inn musa igjen, men denne gangen med mulighet for † velge
+      om den skal resettes ved oppstart. Default er off, og i s† fall
+      kalles en annen musfunksjon for † teste om musa finnes.
+      M† endres med EDSETUP
+    * Endret s† Ctrl-T (delword) f›rst sletter til delimiter, deretter
+      _blanke_ (og ikke delimiters som tidligere).
+
+
+v2.3, 5/8-1992
+    * Kutta ut musa, siden den nye musdriveren til MicroSoft bruker
+      litt tid under oppstarten. Dette var ganske irriterende.
+
+
+v2.22, 26/6-1991
+    * Hvis Esc ble trykket under sp›rsm†l om opsjoner p† s›k eller
+      s›k/erstatt, ville ikke handlingen avbrytes. Dette er fikset.
+
+
+v2.21, 19/5-1991
+    * Bruker "First Fit" p† minneallokering istedenfor "Best Fit".
+
+
+v2.2, 18/5-1991
+    * Sp›r om opsjoner ved s›k/erstatt. Mulighet for † angi G og N.
+    * Ny hjelpeskjerm for opsjoner.
+
+
+v2.13, 16/5-1991
+    * Teksten ble ikke markert endret ved s›k/erstatt. Dette er rettet.
+    * Ved s›k/erstatt blir det n† bedt om bekreftelse.
+
+
+v2.12, 14/4-1991
+    * Endretmerket ble borte etter at brukerskjermen var vist.
+      S›rger n† for at dette vises.
+
+
+v2.11, 4/3-1991
+    * S›k og erstatt, en og en forekomst uten sp›rsm†l om erstatning.
+    * Ryddet opp i alle filene ved † lage riktig innrykk for kommentarer
+      og lokale labels, samt riktig linjeavstand mellom prosedyrer.
+    * Slett ord til h›yre er laget.
+
+
+v2.1, 21/2-1991
+    * 14 plasser i plukkfilen. Det er dette som kommer n‘rmest 3 hele
+      sektorer, slik at mest mulig av plassen utnyttes. Er ikke
+      kompatibel med tidligere versjoner.
+    * Samlet noen av milj›variablene, slik at de kan endres via EDSETUP.
+      MERK: N†r versjonen i ED endres, m† EDSETUP ogs† kompileres om.
+            Versjonsnummerne m† v‘re helt like!
+            Dette fikser imidlertid MAKE.
+
+
+v2.01, 13/2-1991
+    * Kolonnenummeret ble ikke oppdatert ved flytting av ord til h›yre.
+
+
+v2.0, 4/2-1991
+    * Jepp, da sier vi at programmet er testet ut. Sikkert en del feil,
+      men jeg satser p† at de ikke er alvorlige!
+
+
+
+============================================================================
+
+
+
+UFERDIGE VERSJONER AV ED v2.0 (á = ascii 225)
+
+v2.0 (á v2.01), 30/1-1991
+    * En feil er rettet: Glemte † pushe DX i enkelte funksjoner hvor
+      dette registret bare ble brukt for † vise feilmelding. Dette ga
+      merkelige resultater, feks n†r en for lang linje ble lest inn
+      fra disk.
+
+
+v2.0 (á v2.0), 29/1-1991
+    * Fikset s† Ctrl-Break ikke henger programmet. Ctrl-Break returnerte
+      0 (fra getkey), og det ble ikke testet p† dette, s† en prosedyre
+      som ikke fantes ble kalt.
+    * Lagt inn Ctrl-C / Ctrl-Break -handler, slik at ikke programmet
+      kunne avbrytes n†r filbehandling foregikk hos brukere som
+      har BREAK=ON.
+    * Har laget enkel Critical Error -handler som setter et flagg som senere
+      sjekkes av error-prosedyren. Det gis ikke noe indikasjon p† hva
+      feilen kan komme av.
+
+
+v2.0 (á v1.97), 11/1-1991
+    * En av rettingene i natt ga ny feil: Ble ikke laget tom linje
+      hvis ikke-eksisterende fil ble "†pnet". Dette fikk "katastrofale"
+      f›lger. Har rettet opp feilen, det var bare en jmp som gikk litt
+      for langt.
+
+
+v2.0 (á v1.96), 11/1-1991
+    * Det ble ikke gitt melding hvis ukjent directory ble angitt.
+    * Standard extension ble ikke hentet fra filnavnet hvis filen
+      endte i en newline (!)
+
+
+v2.0 (á v1.95), 10/1-1991
+    * Skrevet om filbehandlingen s† den jobber mer direkte mot bufferet
+      istedenfor † bruke getc/putc
+
+
+v2.0 (á v1.91), 10/1-1991
+    * Rettet opp noen sm†feil fra versjonen over.
+
+
+v2.0 (á v1.9), 10/1-1991
+    * Ja, n† er det endelig ogs† mulig † angi wildcards i filnavn
+      og f† opp en liste. Great!!
+
+
+v2.0 (á v1.8), 9/1-1991
+    * Ogs† et (ganske) stort ›yeblikk! Har laget plukkliste og plukkfil.
+    * Fullstendig utfylling av filnavn.
+
+
+v2.0 (á v1.5), 8/1-1991
+    * Dette er et stort ›yeblikk: De viktigste blokkfunksjonene er
+      n† antakelig ferdige. H†per bare at de virker. De eneste
+      som mangler, er merk enkelt ord, og print blokk. Disse har
+      jeg ikke s‘rlig bruk for.
+
+
+v2.0 (á v1.03), 7/1-1991
+    * En god del endringer.
+    * Har skrevet om filbruk, slik at det ble mer generelt.
+      Dessverre ble det ogs† litt tregere, men optimaliseringen
+      f†r jeg spare til slutt.
+    * Mulig † slette blokk !
+    * Mulig † skrive blokk til fil !!
+    * Posisjonsmark›rer
+    * Goto Line
+    * Character prefix
+    * husker ikke mer, men det er sikkert en del til!
+
+
+v2.0 (á v1.02b), 4/1-1991
+    * Return p† siste linje med innsett av gir n† ny linje.
+      F›r gikk ikke mark›ren videre nedover.
+
+
+v2.0 (á v1.02a), 30/10-1990
+    * Gjort litt av det som skal til for † vise blokk i teksten.
+      Det som mangler, er oppdatering av blokkpekere n†r teksten
+      endres. Se filen NOTES.TXT
+
+
+v2.0 (á v1.01), 29/10-1990
+    * Enkel musstyring av mark›ren er lagt inn
+    * Fant tilfeldigvis en feil: glemte † justere mark›rposisjonen
+      ved flytting av ord til h›yre.
+
+
+v2.0 (á v1.0), 4/9-1990
+
+

@@ -1,0 +1,96 @@
+
+
+
+       I hate all these text-files, but everybody else includes them with
+       their programs, so maybe I should do so too. :-)
+
+       Most (if not all) changes done to DOSED are caused by users telling
+       me their needs and whishes. That's good, I think. If I didn't know
+       there were lots of people out there using this program, I would have
+       given it up a long time ago. Well, here we go: (dates are d/m/y)
+
+
+       v5.2, 7/9/94 (published at garbo.uwasa.fi sep 94)
+           * Fixed a couple of `bugs' by rewriting the completion logic:
+                 * ..<tab> will now give ..\ instead of just ..
+                 * Given two files abc and abc.def, abc.<tab> will
+                   now give abc.def instead of abc only.
+           * A second Tab-press will show matching files.
+           * .BAK-files are skipped during completion, unless turned off
+             using new option -s-.
+           * Dot-files (. and ..) match only if they are explicitely
+             given. This makes it possible to match single files in a
+             directory without giving any of it's letters.
+
+
+       v5.17, 9/5/94 (published at garbo.uwasa.fi may 94)
+           * Fixed `bug' in trailing backslash removal: cd\ wouldn't work.
+             Now handles the first word different than the others: If any
+             trailing backslash is the only one in the word, it's kept.
+             Otherwise it's removed.
+           * Bundeled my old (and extremely simple) ALIAS program, for
+             those who want aliases (see ALIAS.DOC!!!).
+
+
+       v5.15, 12/4/94 (published at garbo.uwasa.fi apr 94)
+           * Added option (default on): -r for removing trailing back-
+             slashes. This was wish number one from most of you out there!
+           * Now tries to complete even if no part of a filename is
+             given (just when Tab is pressed of course :-) )
+           * No longer displays status info when deinstalled.
+
+
+       v5.0, 8/7/93 (published at garbo.uwasa.fi jul 93)
+           * No longer resets options to default. Use `-' after options
+             to disable previously selected options.
+           * Added clear to end of line. Set ^Q to this.
+           * Checking if a different version is already resident, to avoid
+             locking up the computer.
+           * Finally: Press Shift-Tab or ^Z for list of all possible
+             matching files! Wondering why I didn't use ^D for this? Well,
+             ^D is used for other things. Didn't bother adding lots of
+             stuff to check if ^D should be this or that at a given cursor-
+             location. Think of it this way: ^Z is MD-DOS' end of file,
+             while ^D is the Unix variant.
+           * Options might start with '-' in addition to '/'.
+           * New option: -b for beeping if filename completion is in-
+             complete, or if there is no match at all.
+           * New option: -d to disable appending '\' to directory names
+             when completing.
+           * New option: -e for use of Emacs-keys instead of WordStar.
+             Needed special treatment, since ^P in Emacs means previous
+             line, while it means `echo to printer' in DOS. Disabled the
+             last one when in Emacs mode.
+           * New option: -l for converting characters in completed
+             filenames to lowercase.
+           * New option: -m<x> for entering minimum number of characters
+             that will allow a line to be stored in the history buffer.
+
+           Drawback: The resident size of the program increased from 2700
+           to 3200 bytes. Too bad! Hope it doesn't stop you from using it!
+
+
+       v4.1, 4/5/91 (published at garbo.uwasa.fi jun 93)
+           * ^Y to clear a line (as Esc).
+           * Other minor changes.
+
+
+       v4.0, 18/4/91
+           * New TSR-system allowing uninstall, and freeing the environ-
+             ment to save some bytes of memory.
+
+
+       v3.6, 9/3/91 (published at comp.binaries.ibm.pc apr 91)
+           * Translated from Norwegian to English, since there was a
+             request for a command line editor with filename completion on
+             comp.binaries.ibm.pc
+
+
+       :
+       : Program totally rewritten, restructured etc.
+       : Filename completion introduced in v3.0 7/4/90.
+       :
+
+
+       v1.0, 15/3/89
+

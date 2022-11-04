@@ -1,0 +1,24 @@
+I have uploaded:
+SimTel/msdos/keyboard
+dosed520.zip    Cmd line editor with completion and emacs-keys
+
+Resident program (about 3400 bytes) that gives extended operations
+on the DOS commandline. The three new functions are:
+  * Editing
+  * History, recall previous commands
+  * Filename completion (with displaying of matching files)
+
+Special requirements: None
+
+Changes:
+  * Fixed a couple of minor `bugs'.
+  * A second Tab-press will show matching files.
+  * .BAK-files are skipped during completion, unless turned off
+    using new option -s-.
+
+dosed520.zip has replaced dosed517.zip.
+
+FreeWare. Uploaded by the author.
+
+Sverre H. Huseby
+sverrehu@ifi.uio.no

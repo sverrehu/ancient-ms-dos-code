@@ -1,0 +1,27 @@
+I have uploaded:
+SimTel/msdos/editor
+shhed240.zip    Small, WordStar-inspired texteditor.
+
+SHH ED is a simple text editor inspired by the editors in older
+versions of Borland's compilers. These are based on good old WordStar.
+
+The problem with the newer Borland editors is that they are `stuck' 
+in an enormous integrated environment. If you wish to use Borland's 
+integrated editors for other things than writing programs, there's 
+no choice to leave everything except the editor out. This results 
+in several seconds for loading.
+
+This is especially annoying when programming using the command line 
+compiler. Start the editor, edit the text, quit the editor, compile 
+the program, restart the editor etc. This just takes too long.
+
+With that as a background, i tried to make a _small_ text editor 
+not too different from (old versions of) Borland's intergrated 
+editors.
+
+Special requirements: None
+
+FreeWare. Uploaded by the author.
+
+Sverre H. Huseby
+sverrehu@ifi.uio.no

@@ -1,0 +1,16 @@
+v1.11, 5/1-1992
+  * Possible to use arrowkeys.
+  * Changed Larvik to Oslo.
+
+
+
+v1.1, 25/12-1991
+  * Highscores are written to disk as they are changed, and
+    not just at the end of the game. This is because someone
+    might turn the computer off before quiting the game, thus
+    leaving the highscorefile unchanged.
+  * Some more keys are added to satisfy some friends
+
+
+
+v1.0, 17/12-1991

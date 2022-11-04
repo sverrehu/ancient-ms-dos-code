@@ -1,0 +1,26 @@
+
+
+    Possible changes to DOSED
+    =========================
+
+    High pri
+    --------
+
+    Low pri
+    -------
+
+    * Ansi keyredefines doesn't work. Have no idea why.
+
+    * Pressing up and down should give an empty line. Ask Lena.
+
+    * Pressing up/down on a partially entered line should try to
+      match what was entered with lines stored in the buffer.
+
+    * For emacs, Alt-B moves word left and Alt-F moves word forward.
+      This requires rewriting some of the keyboard logic, since
+      these are not Ctrl-keys.
+
+    * User configurable history buffer size.
+
+    * When completing filenames: Search PATH for matches if none
+      found in the current dir.

@@ -1,0 +1,132 @@
+
+v5.2, 7/9/94
+    * No changes since 5.19
+
+
+v5.19á2, 9/8/94 (prerelease of v3.2)
+    * New option: -s to turn on (or off if -s-) .BAK skipping.
+      Default is still on.
+    * Dot-files (. and ..) match only if they are explicitely
+      given. This makes it possible to match single files in a
+      directory without giving any of it's letters.
+
+
+v5.19á, 9/8/94 (prerelease of v3.2)
+    * Hopefully managed to rewrite the completion logic to test
+      _all_ files in the given directory for matches, thus fixing
+      a couple of the todo's:
+          * ..<tab> doesn't give ..\ due to the special treatment
+            of .-files.
+          * Having two files abc and abc.txt won't give abc.txt when
+            abc. is entered. Bug or MSDOS?
+    * A second Tab-press will display matching names.
+    * Always skips .BAK-files.
+
+
+v5.17, 9/5/94 (published at garbo may 94)
+    * Included ALIAS as a helper...
+    * Some additions about DOSKEY in the DOC.
+
+
+v5.16, 29/4/94
+    * Fixed bug: cd\ wouldn't work. Now handles the first word separately
+      from the others: If there's only one backslash, and it is the last
+      character in the word, it's kept. Otherwise it's removed.
+
+
+v5.15, 12/4/94 (published at garbo apr 94)
+    * Now tries to complete even if no part of a filename is
+      given (just when Tab is pressed of course :-) )
+    * No longer displays status info when deinstalled.
+    * Fixed a bug causing the backslash-removal thing to loop 65535 times
+      on an empty line.
+
+
+v5.1, 7/4/94
+    * Added option -r: Remove trailing backslashes. Default on.
+
+
+v5.0, 8/7/1993 (published at garbo)
+
+
+v4.58á, 29/6/1993 (prerelease of v5.0)
+    * No longer resets options to default.
+    * Enabled disabling of options by adding a `-' after the option.
+    * Removed Norwegian messages previously included in conditional
+      assembly directives. No more Norwegian versions of DOSED!
+
+
+v4.57á, 18/6/1993 (prerelease of v5.0)
+    * Started using English comments, hoping once to translate the
+      old ones.
+    * Removed all IFDEF EXPAND --- will always want filename completion,
+      else DOSED ain't DOSED.
+    * Added clear to end of line. Set Ctrl-Q to this.
+    * Checking if a different version is already running, to avoid
+      locking up the computer.
+    * Finally: Press Shift-Tab for list of all possible matching files!
+    * Options might start with '-' in addition to '/'.
+    * New option: -b for beeping if filename completion is incomplete,
+      or if there is no match at all.
+    * New option: -d to disable appending '\' to directory names
+      when completing.
+    * New option: -e for use of Emacs-keys instead of WordStar. Needed
+      special treatment, since Ctrl-P in Emacs means previous line,
+      while it means `echo to printer' in DOS. Disabled the last one
+      when in Emacs mode.
+    * New option: -l for converting characters in completed filenames
+      to lowercase.
+    * New option: -m<x> for entering minimum number of characters that
+      will allow a line to be stored in the history buffer.
+
+
+v4.1, 4/5-1991 (publisert p† garbo)
+    * Leser Ctrl-C i Cooked mode, slik at det er MS-DOS selv som tar seg
+      av behandlingen av denne (som Ctrl-P)
+    * Esc blanker linjen, men fortsetter samme redigering. Tidligere
+      ble en blank linje returnert til kalleren, og det er ikke det
+      samme som skjer under normal redigering med funk 0Ah.
+    * Ctrl-Y for † blanke linjen (samme som Esc).
+    * Tegn med ASCII-verdi < 32 lagres (hvis de ikke er WordStarkommando).
+
+
+v4.0, 18/4-1991
+    * Nytt TSR-system som tillater Uninstall, og hvor environmentet frigj›res.
+    * Laget masse kommentarer, og ryddet opp i koden.
+
+
+v3.6, 9/3-1991 (publisert p† comp.binaries.ibm.pc)
+    * Mulighet for engelsk tekst
+    * F1 gir forrige kommando og flytter til starten av linjen.
+
+
+v3.5, 10/1-1991
+    * Fyller ogs† ut filnavn hvis flere filer starter med samme tegn.
+      Fyller ut s† mange tegn som er like.
+    * F1 og F3 gir forrige kommando.
+
+
+v3.1, 20/4-1990
+    * Fikset s† mark›ren blir riktig ogs† p† EGA med 43 linjer.
+
+
+v3.0, 7/4-1990
+    * Endelig: Mulighet for † trykke Tab for † f† utfylt et p†begynt
+               (entydig) fil-/dir- navn.
+    * Satt ned fra 4 til 3 grensen for antall tegn som m† til for at
+      kommandoer skal lagres.
+
+
+v2.01, 30/1-1990
+    * Tolker n† spesielt ved Ctrl-P, slik at denne virker som vanlig under DOS.
+
+
+v2.0, 28/1-1990
+    * Skrevet om hele programmet. Setter ikke lenger av fast plass til
+      hver linje.
+
+
+.
+.
+.
+
