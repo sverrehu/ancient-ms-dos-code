@@ -1,0 +1,123 @@
+
+
+                   ***************************************
+                   *                                     *
+                   *          M E N Y    I I I           *
+                   *                                     *
+                   *      Menysystem for harddisker      *
+                   *                                     *
+                   ***************************************
+
+
+
+
+
+                  Skrevet i Borland C++ v3.1 (MENYPROG.EXE)
+                    og Turbo Assembler v3.1 (MENY.COM) av
+
+
+                               Sverre H. Huseby
+                               Lofthusvn. 11 B
+                                 N-0587 Oslo
+                                    Norge
+
+                             Tlf: +47 901 63 579
+                          E-mail: sverrehu@online.no
+                      URL: http://home.sol.no/~sverrehu/
+
+
+
+
+
+
+       Programmet er f›yd til i den lange  rekken av s†kalte "Freewareprog-
+       grammer". Dette inneb‘rer f›lgende:
+
+          * Du m†  gjerne  kopiere  programmet  videre  (det er  det som er
+            meningen),  men det er ikke tillatt † selge det for mer enn det
+            et evt. lagringsmedium og evt. porto koster.
+          * Jeg er p†  ingen m†te  ansvarlig for tap  eller skade som m†tte
+            oppst† i forbindelse med bruk.  Det finnes ingen garanti for at
+            programmet virker som angitt.
+
+
+
+       Har du  kommentarer  eller  sp›rsm†l i  forbindelse med  programmet,
+       eller skulle du finne noen feil, s† tar jeg gladelig imot brev!
+
+
+       OBS: Residente programmer b›r ikke startes fra menyprogrammet.
+
+
+
+                                   --- O ---
+
+
+
+
+
+       INSTALLASJON AV MENYPROGRAMMET
+       ==============================
+
+       1. Opprett en katalog for menyprogrammet p† ›nsket diskenhet.
+
+       2. Kopier MENY*.* til den nyopprettede katalogen.
+          (MENY.COM, MENYPROG.EXE, MENYKONF.EXE, MENY.DOC)
+
+       3. Hvis et av punktene under er oppfylt,  m† MENYKONF.EXE kj›res for
+          † sette riktige verdier i MENY.COM:
+              * Diskenheten er ikke C:
+              * Katalogen er ikke \MENY
+              * COMMAND.COM kan ikke kalles med C:\COMMAND.COM
+
+       4. F›y til katalogens navn i PATH-kommandoen i AUTOEXEC.BAT
+
+       5. Legg evt. MENY sist i AUTOEXEC.BAT hvis menyen skal startes auto-
+          matisk.
+
+       Startkommandoen er MENY.  Bruken av menyen skulle v‘re enkel nok, s†
+       jeg gir ingen n‘rmere forklaringer. Ta kontakt hvis du stanger hodet
+       i veggen!
+
+
+
+       HVORDAN MENYEN VIRKER
+       =====================
+
+       Programmet  MENY.COM blir  liggende i minnet  hele tiden (opptar ca.
+       1500 bytes).  Dette kaller f›rst MENYPROG.EXE,  som er det du f†r se
+       p† skjermen.
+
+       N†r brukeren  har gjort sitt valg,  avsluttes MENYPROG.EXE, og dette
+       sender opplysninger om valgt program til MENY.COM.
+
+       MENY.COM vil deretter aktivisere COMMAND.COM,  som igjen starter det
+       ›nskede programmet (hvis det finnes).
+
+       N†r valgt  program er  ferdig utf›rt,  vil  COMMAND.COM  fjernes fra
+       minnet, og MENY.COM f†r igjen kontrollen.  S† startes det fra begyn-
+       nelsen igjen med kall av MENYPROG.EXE. (Puh! . . .)
+
+       Dette  utf›res helt  til brukeren  avslutter med Alt/X.  Da vil ogs†
+       MENY.COM avslutte  og overlate  kommandoen til den  originale DOS'en
+       (COMMAND.COM).
+
+
+       N†r et program blir startet, vil alts† MENY.COM og COMMAND.COM ligge
+       resident i minnet.  Dette utgj›r til sammen ca. 5 kb,  og det skulle
+       v‘re  rikelig med plass til  STORE  applikasjoner!  (Kj›rer du nyere
+       versjoner av DOS,  kan du legge MENY.COM i upper memory ved † skrive
+       "LH MENY" for oppstart).
+
+
+
+
+
+
+                                          Takk for at du sprer
+                                          programmet videre!
+
+
+                                          Sverre.
+
+

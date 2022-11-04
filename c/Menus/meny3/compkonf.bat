@@ -1,0 +1,1 @@
+tcc -f- -ms -d -O menykonf shhlib_s.lib scrlow_s.lib

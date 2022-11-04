@@ -1,0 +1,63 @@
+v1.7.1, 2000-03-04
+  * Endret datoformatet s† det tar med firesifret †rstall, og vises
+    p† ISO-form.
+
+
+v1.7, 14/5/95
+  * Skjermbeskytter.
+  * Lagt opp for egendefinerte tegn for hvert menyvalg i menyfilene, men
+    ikke i resten av programmet.
+  * Endret farge p† vinduer for innlesning av datafelt.
+  * Diverse oppsett p† F6.
+
+
+v1.61, 27/11/94
+  * Omkompilerte biblioteker som n† bruker Borland's egne cursor-rutiner.
+  * Ny Makefile
+  * Tab kan brukes for † g† til neste felt under innlesing.
+  * Kaller "mem /c" for dos-versjon >= 4 under visning av minne.
+
+
+v1.6, 22/8-1992
+  * Mulighet for † angi at brukeren m† trykke en tast for † returnere
+    til menyen etter at et program er kj›rt. Ide: yvind Amundsen
+  * Ny versjon av Borland C++ (v3.0), og omkompilerte biblioteker
+
+
+v1.55, 14/10-1990
+  * Enda nyere versjon av TC++. Og omkompilerte biblioteker
+
+
+v1.54, 8/10-1990
+  * Kompilert om med Turbo C++ v1.0
+
+
+v1.53, 4/9-1990
+  * Kopierte et tegn for lite i directoryet hvis drive var angitt
+    spesielt. Dette f›rte til at nullen p† slutten ikke ble med, og
+    det var derfor ofte ikke mulig † endre til angitt directory.
+
+
+v1.52, 31/8-1990
+  * Kompilert om med nye utgaver av bibliotekene SCRLOW og BASIC
+
+
+v1.51, 27/8-1990
+  * Kompilert om med ny utgavet av biblioteket SCRLOW
+
+
+v1.5, 6/1-1990
+  * Mulighet for † starte programmer p† andre disker.
+  * ket stacken i MENY.COM
+  * Setter skjermen til 25 linjer, og tar vare p† orginalt (tekst-)modus
+  * Viser ikke MENYPROG.EXE i minneoversikten
+  * Endret testen p† tegns gyldighet i minneoversikten
+  * Endret orginalfarger
+
+
+v1.14, 19/7-1989
+
+
+.
+.
+.

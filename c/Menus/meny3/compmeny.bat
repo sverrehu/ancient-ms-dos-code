@@ -1,0 +1,1 @@
+tcc -f- -mc -d -O menyprog shhlib_c.lib scrlow_c.lib
