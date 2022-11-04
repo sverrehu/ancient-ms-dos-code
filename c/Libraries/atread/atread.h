@@ -1,0 +1,23 @@
+void  at(int x, int y, int retn, void *ptr, int typ, int len);
+int   atread(int start);
+void  atread_show_fields(int status);
+void  atzero(void);
+int   choice(int tst, int funk);
+void  def_atread(int (*infunc)(), void (*outfunc)());
+int   floatinp(float *var, int len, int attr, int tst, int funk);
+int   getinsert(void);
+int   getsex(int tst, int funk);
+int   intinp(int *var, int len, int attr, int tst, int funk);
+int   invattr(void);
+int   markattr(void);
+int   lineinput(char *lin, int maks, int attr, int tst, int func);
+int   longinp(long *var, int len, int attr, int tst, int funk);
+void  outfloat(float *tall, int len);
+int   sexinp(int *var, int attr, int tst, int funk);
+void  setinsert(int status);
+void  setshowins(int status);
+void  setshowinsattr(int attr);
+void  setshowinspos(int x, int y);
+void  showins(void);
+int   yesnoinp(int *var, int attr, int tst, int funk);
+

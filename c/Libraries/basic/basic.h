@@ -1,0 +1,35 @@
+#define byte unsigned char
+
+void  border(int x1, int y1, int x2, int y2);
+void  clrarea(byte x1, byte y1, byte x2, byte y2);
+void  cursoff(void);
+void  curson(void);
+int   cursor(void);
+void  def_fkey(int nr, void (* ft)(void));
+void  def_getkey(void (* fnk)(void));
+void  def_getkey_handler(int (* fnk)(int));
+void  far * find_scr_addr(void);
+int   getinv(void);
+int   getkey(void);
+int   getpage(void);
+int   gettextbackground(void);
+int   gettextcolor(void);
+int   gettextattr(void);
+int   gettextmode(void);
+void  lattr(int line, int attr);
+void  scrolld(byte x1, byte y1, byte x2, byte y2);
+void  scrollu(byte x1, byte y1, byte x2, byte y2);
+void  sent(char *format, ...);
+void  sentln(char *format, ...);
+void  setbgrnd(int color);
+void  setblink(int status);
+void  setfgrnd(int color);
+void  setinv(int status);
+void  setpage(byte page);
+void  setsnowchecking(int status);
+void  showchar(int x, int y, byte c, byte a);
+void  undef_fkey(int nr);
+void  undef_getkey(void);
+void  undef_getkey_handler(void);
+int   xmax(void);
+int   ymax(void);
