@@ -1,0 +1,100 @@
+                              TILLEGG TIL MANUALEN
+
+
+
+         Her f›lger en oversikt over funksjoner som er kommet til i SHHLIB
+         etter at manualen ble trykket.
+
+
+
+         Modul          Atread
+         Navn           atread_show_fields
+         Definisjon     void atread_show_fields(int status);
+         Beskrivelse    Denne funksjonen angir hvorvidt alle feltene
+                        skal vises p† skjermen for hver gang brukeren
+                        flytter til et nytt felt.
+                        Standardverdi er 1 (P).
+         Returverdi     Ingen
+         Se ogs†        at, atread
+
+
+
+         Modul          Atread
+         Navn           markattr
+         Definisjon     int markattr(void);
+         Beskrivelse    Finner attributt som passer p† uthevet felt.
+                        Brukes av atread().
+         Returverdi     7 hvis bakgrunnsfargen ikke er svart.
+                        112 hvis bakgrunnsfargen er svart.
+         Se ogs†        invattr
+
+
+
+         Modul          Atread
+         Navn           setshowinsattr
+         Definisjon     void setshowinsattr(int attr);
+         Beskrivelse    Denne funksjonen angir hvilken attributt ordet
+                        "Innsett"/"Erstatt" skal ha n†r det vises p†
+                        skjermen. Dersom attributten settes til -1,
+                        vil ordet bli vist i n†v‘rende attributt.
+                        Standardverdi er -1.
+         Returverdi     Ingen
+         Se ogs†        showins, setshowins, setshowinspos
+
+
+
+         Modul          Basic
+         Navn           setsnowchecking
+         Definisjon     void setsnowchecking(int status);
+         Beskrivelse    Bestemmer om s†kalt "snowchecking" skal foretas
+                        i forbindelse med skriving direkte til skjerm-
+                        minnet (showchar()). Dette er kun aktuelt p†
+                        gamle CGA-kort.
+                        Merk: Ved bruk av vinduer, vil snowchecking all-
+                        ikevel ikke foretas. Gjelder KUN showchar().
+                        Standardverdi er AV.
+         Returverdi     Ingen
+         Se ogs†        showchar, find_scr_addr
+
+
+
+         Modul          Window
+         Navn           set_exploding_windows
+         Definisjon     void set_exploding_windows(int status);
+         Beskrivelse    Gir mulighet for "eksploderende vinduer".
+                        Standardverdi er ON.
+         Returverdi     Ingen
+         Se ogs†        makewindow, removewindow
+
+
+
+         Modul          Window
+         Navn           set_window_shadow
+         Definisjon     void set_window_shadow(int status);
+         Beskrivelse    Sette skygge av vinuer enten av eller p†.
+                        Standardverdi er ON.
+         Returverdi     Ingen
+         Se ogs†        makewindow, removewindow
+
+
+
+
+
+         F›lgende endring er gjort:
+
+       * showchar har f†tt ny header:
+
+             showchar(int x, int y, unsigned char c, unsigned char a);
+                                    =============    =============
+
+       * atread viser n† alle felt for hver gang et nytt felt entres.
+         Dette gir mulighet for † la egendefinerte felt endre andre
+         felt.
+
+       * atread har f†tt en ny type: 8 - double
+
+       * Feil rettet i getkey: Ctrl-Break (ikke Ctrl-C) kunne f† tastatur-
+         innlesningen til † stoppe hvis man hadde definert en funksjon
+         som skulle g† s† lenge ingen tast var trykket.
+
+
