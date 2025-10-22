@@ -1,0 +1,5 @@
+@ECHO OFF
+FOR %%Q IN (DIR?.ASM) DO TASM /ml /m2 /zi %%Q
+FOR %%Q IN (DIR?.OBJ) DO TLIB /E ASMLIB -+%%Q
+DEL DIR?.OBJ
+DEL *.BAK

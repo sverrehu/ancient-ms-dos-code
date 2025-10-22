@@ -1,0 +1,5 @@
+@ECHO OFF
+TASM /ml /m2 /zi %1
+TLIB /E ASMLIB -+%1
+DEL %1.OBJ
+DEL *.BAK
